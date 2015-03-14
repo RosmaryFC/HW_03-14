@@ -1,5 +1,11 @@
 package nyc.c4q.RosmaryFC;
 import java.util.Scanner;
+
+/*
+Project: Adventure Game
+Name: Rosmary Fermin
+Description: Create a text based adventure game. DUNGEON MAZE
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -11,11 +17,11 @@ public class Main {
 
         System.out.println("You are lost in a dungeon, due to falling in a hole in the forest, you must find a  way out." +
                 " But beware, there are monsters lurking in the dark.\n");
-        System.out.println("Where am I?... I must have fallen through that hole up there. Let me find a way out of here");
+        System.out.println("Where am I?... I must have fallen through that hole up there. Let me find a way out of here.");
 
         System.out.println("Left or Right?");
         String answer1 = keyboard.next();
-// bug here where it skips over whole while loop when i type the right answer the first time. only happens when I add other while loops in code
+
         while (! answer1.equalsIgnoreCase(left) && ! answer1.equalsIgnoreCase(right)) {
             System.out.println("Left or Right?");
             answer1 = keyboard.next();
